@@ -1,3 +1,4 @@
+# This is the correcttt dtb for G1/G3
 # Use the non-open-source part, if present
 -include vendor/mediatek/k53v1_64_bsp/BoardConfigVendor.mk
 
