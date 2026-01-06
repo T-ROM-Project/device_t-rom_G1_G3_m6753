@@ -1,1 +1,0 @@
-../k63v2_64_bsp/ProjectConfig.mk

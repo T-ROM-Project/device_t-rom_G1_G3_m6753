@@ -1,1 +1,0 @@
-../k37mv1_64_bsp/ProjectConfig.mk
