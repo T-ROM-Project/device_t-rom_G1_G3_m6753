@@ -1,3 +1,4 @@
+#Correct
 # Inherit for devices that support 64-bit primary and 32-bit secondary zygote startup script
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
@@ -37,11 +38,18 @@ PRODUCT_MODEL := k53v1_64_bsp
 PRODUCT_POLICY := android.policy_phone
 PRODUCT_BRAND := alps
 
-ifeq ($(TARGET_BUILD_VARIANT), eng)
-KERNEL_DEFCONFIG ?= k53v1_64_bsp_debug_defconfig
-else
-KERNEL_DEFCONFIG ?= k53v1_64_bsp_defconfig
-endif
-PRELOADER_TARGET_PRODUCT ?= k53v1_64_bsp
-LK_PROJECT ?= k53v1_64_bsp
-TRUSTY_PROJECT ?= k53v1_64_bsp
+# Kernel prebuilt
+TARGET_PREBUILT_KERNEL := device/k53v1_64_bsp/prebuilt/kernel
+TARGET_PREBUILT_RECOVERY_KERNEL := $(TARGET_PREBUILT_KERNEL)
+TARGET_NO_KERNEL := false
+TARGET_NO_KERNEL_OVERRIDE := true
+
+# Bootloader prebuilt
+TARGET_PREBUILT_LK := device/k53v1_64_bsp/prebuilt/lk.bin
+TARGET_PREBUILT_PRELOADER := device/k53v1_64_bsp/prebuilt/preloader.bin
+
+# Copy Prebuilt
+PRODUCT_COPY_FILES += \
+    device/k53v1_64_bsp/prebuilt/kernel:kernel \
+    device/k53v1_64_bsp/prebuilt/dt.img:dt.img \
+    device/k53v1_64_bsp/prebuilt/lk.bin:lk.bin
