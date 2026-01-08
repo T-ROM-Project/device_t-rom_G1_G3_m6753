@@ -1,1 +1,3 @@
-# alps_o1_device
+G1/G3 device tree  missing files/directorys:
+/vendor/mediatek/...
+
