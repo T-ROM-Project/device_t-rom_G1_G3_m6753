@@ -1,3 +1,4 @@
+# Correct
 mkdir /data/misc/sensors 0664 system system
 
 service msensord /vendor/bin/msensord
