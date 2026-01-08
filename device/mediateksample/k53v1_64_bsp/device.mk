@@ -85,7 +85,7 @@ PRODUCT_PROPERTY_OVERRIDES += ro.mediatek.platform=MT6735
 
 # set Telephony property - SIM count
 SIM_COUNT := 2
-PRODUCT_PROPERTY_OVERRIDES += ro.telephony.sim.count=$(SIM_COUNT)
+PRODUCT_PROPERTY_OVERRIDES += ro.telephony.sim.count=2
 PRODUCT_PROPERTY_OVERRIDES += persist.radio.default.sim=0
 
 # Audio Related Resource
