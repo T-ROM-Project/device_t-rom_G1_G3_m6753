@@ -159,4 +159,4 @@ $(call inherit-product, device/mediatek/mt6735/device.mk)
 $(call inherit-product-if-exists, vendor/mediatek/libs/$(MTK_TARGET_PROJECT)/device-vendor.mk)
 
 
-# enable dex_preopt optioin
+# enable dex_preopt optioin (Comment: Who has such spelling mistakes .-palutenfan123)

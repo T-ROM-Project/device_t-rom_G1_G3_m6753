@@ -1,6 +1,6 @@
 
 # Do not copy rc files before this line !!
-# RC files should goto /vendor since O-MR1
+# RC files should goto /vendor since O-MR1 (Comment: Understood -palutenfan123)
 
 MTK_RC_TO_VENDOR = yes
 ifeq ($(strip $(MTK_RC_TO_VENDOR)), yes)
@@ -1359,7 +1359,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += libsysenv
 PRODUCT_PACKAGES += sysenv_daemon
 
-#inherit common platform
+#inherit common platform (Comment: OK -palutenfan123)
 $(call inherit-product, device/mediatek/common/device.mk)
 
 ifeq ($(MTK_TC10_FEATURE),yes)

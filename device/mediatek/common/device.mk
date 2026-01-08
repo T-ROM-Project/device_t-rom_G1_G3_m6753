@@ -1,3 +1,4 @@
+#PAUSE
 # this is platform common device config
 # you should migrate turnkey alps/build/target/product/common.mk to this file in correct way
 
