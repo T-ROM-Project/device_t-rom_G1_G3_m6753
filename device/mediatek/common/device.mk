@@ -1,4 +1,4 @@
-#PAUSE
+# Correct but please check again5
 # this is platform common device config
 # you should migrate turnkey alps/build/target/product/common.mk to this file in correct way
 
@@ -134,7 +134,7 @@ endif
 #MTB
 PRODUCT_PACKAGES += mtk_setprop
 
-#MMS
+#MMS (Comment : Ignoring -palutenfan123)
 ifeq ($(strip $(MTK_BASIC_PACKAGE)), yes)
     ifndef MTK_TB_WIFI_3G_MODE
         PRODUCT_PACKAGES += messaging
