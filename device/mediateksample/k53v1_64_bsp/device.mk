@@ -1,4 +1,4 @@
-
+# Correct
 
 # PRODUCT_COPY_FILES += $(LOCAL_PATH)/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg:mtk
 # PRODUCT_COPY_FILES += $(LOCAL_PATH)/ueventd.mt6735.rc:root/ueventd.mt6735.rc
