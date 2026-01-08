@@ -1,8 +1,15 @@
 #
 # system.prop for generic sdk
-#
+# TTTTTTT   RRRRRR   OOOOOO   M     M  
+#    T      R     R  O    O   MM   MM  
+#    T      RRRRRR   O    O   M M M M  
+#    T      R   R    O    O   M  M  M  
+#    T      R    R   OOOOOO   M     M  
+# T-ROM Project 2026
+# palutenfan123 2026
+# timmkoo.de 2026
 
-rild.libpath=mtk-ril.so
+rild.libpath=mtk-ril.so 
 rild.libargs=-d /dev/ttyC0
 
 
@@ -62,8 +69,11 @@ ro.kernel.zio=38,108,105,16
 
 # Disable dirty region for Mali
 debug.hwui.render_dirty_regions=false
+#Setting it 
+ro.sf.lcd_density=210
 
-ro.sf.lcd_density=480
+# this is a wifi only device
+ro.radio.noril=true
 
 # disable ipo for development
 sys.ipo.disable=1
